@@ -1,0 +1,75 @@
+
+
+.bg-primary {
+     background-color: #F8F8F2;
+ }
+
+ /* Baby powder */
+ .text-primary {
+     color: #F8F8F2;
+ }
+
+ .border-primary {
+     border-color: #F8F8F2;
+ }
+
+ .bg-secondary {
+     background-color: #2E361C;
+ }
+
+ /* Black olive */
+ .text-secondary {
+     color: #2E361C;
+ }
+
+ .border-secondary {
+     border-color: #2E361C;
+ }
+
+ .bg-accent {
+     background-color: #C2CCA6;
+ }
+
+ /* Sage */
+ .text-accent {
+     color: #C2CCA6;
+ }
+
+ .border-accent {
+     border-color: #C2CCA6;
+ }
+
+ .bg-neutral {
+     background-color: #E1E5D1;
+ }
+
+ /* Beige */
+ .bg-soft {
+     background-color: #F0F2E7;
+ }
+
+ /* Alabaster */
+ .bg-light {
+     background-color: #FFFEFC;
+ }
+
+ /* White */
+
+
+.swiper-button-next{
+  --swiper-navigation-size: 24px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #2E361C;
+}
+
+.swiper-button-prev{
+  --swiper-navigation-size: 24px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #2E361C;
+}
+
+.swiper-pagination{
+     --swiper-pagination-color: #C2CCA6;
+}

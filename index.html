@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">@layer utilities {.font-montserrat {font-family: 'Montserrat', sans-serif;}}</style>
+    <title>Home</title>
+</head>
+
+<body class="font-montserrat bg-primary">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-500">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#" id="logo"
+                    class="flex-shrink-0 text-primary font-bold text-3xl transition-colors duration-500 cursor-pointer">
+                    RAMA</a>
+
+                <!-- Menu Desktop -->
+                <div id="menuNav" class="hidden text-white md:flex space-x-6 transition-colors duration-500">
+                    <a href="#home" class="tracking-widest">Home</a>
+                    <a href="#about" class="tracking-widest">About</a>
+                    <a href="#services" class="tracking-widest">Services</a>
+                    <a href="#contact" class="tracking-widest">Contact</a>
+                </div>
+
+                <!-- Button Mobile -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        ☰
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#2E361C]/80 px-4">
+            <a href="#home" class="block text-white py-2">Home</a>
+            <a href="#about" class="block text-white py-2">About</a>
+            <a href="#services" class="block text-white py-2">Services</a>
+            <a href="#contact" class="block text-white py-2">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- main section -->
+    <section class="flex flex-col gap-20">
+        <!-- hero section -->
+        <section>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div
+                        class="swiper-slide h-[800px] w-full bg-[url('img/pict1.jpg')] bg-cover bg-center flex flex-col justify-center items-center">
+                        <h1
+                            class="text-2xl md:text-5xl md:leading-[100px] font-normal tracking-widest md:tracking-[20px] text-primary drop-shadow-lg select-none">
+                            Nama Villa Disini
+                        </h1>
+                        <a href="#" class="text-md md:text-2xl font-light tracking-widest text-primary underline select-none">
+                            View More
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide h-[800px] w-full bg-[url('img/pict2.jpg')] bg-cover bg-center flex flex-col justify-center items-center">
+                        <h1
+                            class="text-2xl md:text-5xl md:leading-[100px] font-normal tracking-widest md:tracking-[20px] text-primary drop-shadow-lg select-none">
+                            Nama Villa 2 Disini
+                        </h1>
+                        <a href="#" class="text-md md:text-2xl font-light tracking-widest text-primary underline select-none">
+                            View More
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide h-[800px] w-full bg-[url('img/pict3.jpg')] bg-cover bg-center flex flex-col justify-center items-center">
+                        <h1
+                            class="text-2xl md:text-5xl md:leading-[100px] font-normal tracking-widest md:tracking-[20px] text-primary drop-shadow-lg select-none">
+                            Nama Villa 3 Disini
+                        </h1>
+                        <a href="#" class="text-md md:text-2xl font-light tracking-widest text-primary underline select-none">
+                            View More
+                        </a>
+                    </div>
+                </div>
+                <!-- tombol navigasi -->
+                <div class="swiper-button-next select-none"></div>
+                <div class="swiper-button-prev select-none  "></div>
+                <!-- pagination -->
+                <div class="swiper-pagination !text-white"></div>
+            </div>
+        </section>
+
+
+        <!-- Project section -->
+        <section>
+            <div class="w-full h-auto flex flex-col justify-center items-center px-0 gap-20">
+                <h1 class="text-secondary text-light tracking-[10px] md:tracking-[30px] text-2xl md:text-3xl">Project
+                    Gallery</h1>
+                <div class="w-full h-auto flex flex-col md:flex-row">
+                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden">
+                        <div
+                            class="bg-[url('img/pict1.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center bg-[#2E361C]/70 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
+                            <p class="text-accent text-xl font-bold tracking-[8px]">Info tentang gambar</p>
+                        </div>
+                    </div>
+                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden">
+                        <div
+                            class="bg-[url('img/pict2.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center bg-[#2E361C]/70 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
+                            <p class="text-accent text-xl font-bold tracking-[8px]">Info tentang gambar</p>
+                        </div>
+                    </div>
+                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden">
+                        <div
+                            class="bg-[url('img/pict3.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center bg-[#2E361C]/70 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
+                            <p class="text-accent text-xl font-bold tracking-[8px]">Info tentang gambar</p>
+                        </div>
+                    </div>
+                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden">
+                        <div
+                            class="bg-[url('img/pict4.jpg')] h-full w-full bg-cover bg-center transition duration-500 md:group-hover:brightness-50">
+                        </div>
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#2E361C]/70 opacity-100 md:opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
+                            <p class="text-accent text-xl font-bold tracking-[10px]">More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contact section -->
+        <section>
+            <div class="w-full h-70 px-0 flex flex-col justify-between items-center gap-20">
+                <h1 class="text-secondary text-light tracking-[10px] md:tracking-[30px] text-2xl md:text-3xl">Contact Us</h1>
+                <div class="w-full h-fit flex flex-col items-center md:flex-row gap-10">
+                    <div class="md:w-1/3 w-full h-full flex flex-col items-center gap-5">
+                        <img src="icons/phone.png" alt="">
+                        <a href="#" class="tracking-widest underline text-secondary">+62 819 9238 3128</a>
+                    </div>
+                    <div class="md:w-1/3 w-full h-full flex flex-col items-center gap-5">
+                        <img src="icons/mail.png" alt="" class="w-[50px] h-[50px]">
+                        <a href="#" class="tracking-widest underline text-secondary">rama@gmail.com</a>
+                    </div>
+                    <div class="md:w-1/3 w-full h-full flex flex-col items-center gap-5">
+                        <img src="icons/instagram.png" alt="">
+                        <a href="#" class="tracking-widest underline text-secondary">rama.studio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="w-full h-fit bg-accent p-10 flex flex-col">
+                <h1 class="pb-10 text-primary font-bold text-3xl cursor-pointer leading-[20px]">RAMA <br> <span class="text-sm font-light text-primary tracking-widest">Design the Future</span></h1>
+                <div class="h-auto flex flex-col md:flex-row justify-around items-center md:items-start gap-5">
+                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                        <h1 class="font-semibold tracking-widest text-secondary">Resources</h1>
+                        <a href="" class="underline text-secondary">Home</a>
+                        <a href="" class="underline text-secondary">Gallery</a>
+                        <a href="" class="underline text-secondary">Contact</a>
+                    </div>
+                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                        <h1 class="font-semibold tracking-widest text-secondary">Contact</h1>
+                        <a href="" class="underline text-secondary">+62 819 9238 3128</a>
+                        <a href="" class="underline text-secondary">rama@gmail.com</a>
+                        <a href="" class="underline text-secondary">rama.studio</a>
+                    </div>
+                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                        <h1 class="font-semibold tracking-widest text-secondary">Social</h1>
+                        <a href="" class="underline text-secondary">Instagram</a>
+                        <a href="" class="underline text-secondary">Tiktok</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right text-sm font-light bg-accent text-primary">©2025 Khairan Ghithrif</p>
+        </footer>
+
+    </section>
+
+
+
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
