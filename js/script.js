@@ -52,3 +52,49 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll(".box").forEach((el) => observer.observe(el));
+
+
+const popup = document.getElementById("popup");
+const popupKey = "popupTimestamp";
+const delay = 6000; // 6 detik testing
+
+window.addEventListener("load", () => {
+    const lastShown = localStorage.getItem(popupKey);
+    const now = Date.now();
+
+    if (!lastShown || now - lastShown > delay) {
+        popup.classList.remove("hidden");
+    }
+});
+
+function closePopup() {
+    popup.classList.add("hidden");
+    localStorage.setItem(popupKey, Date.now());
+}
+
+emailjs.init({
+    publicKey: "9XSsAWXxrBmxP6F2Y"
+});
+
+const form = document.getElementById("myForm");
+const loading = document.getElementById("loading");
+const thankyou = document.getElementById("thankyou");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // sembunyiin form, munculin loading
+    form.classList.add("hidden");
+    loading.classList.remove("hidden");
+
+    emailjs.sendForm("service_tl26hnu", "template_7h90fbb", this)
+        .then(() => {
+            loading.classList.add("hidden");
+            thankyou.classList.remove("hidden");
+        })
+        .catch(err => {
+            loading.classList.add("hidden");
+            form.classList.remove("hidden");
+            alert("Error: " + JSON.stringify(err));
+        });
+});

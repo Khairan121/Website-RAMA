@@ -14,11 +14,46 @@
 </head>
 
 <body class="font-montserrat bg-white">
+    <div id="popup" class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center hidden">
+        <div
+            class="bg-white p-10 border-2 border-[#152238] rounded-lg shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
+
+            <h1 id="popup-title">Tell us more about you</h1>
+
+            <!-- Form -->
+            <form id="myForm" class="flex flex-col justify-center items-center gap-5">
+                <input type="text" name="name" placeholder="Name" class="bg-stone-100 px-3 py-1" required>
+                <input type="text" name="time" placeholder="Email" class="bg-stone-100 px-3 py-1" required>
+                <input type="text" name="message" placeholder="Phone" class="bg-stone-100 px-3 py-1" required>
+
+                <button type="submit" class="bg-[#152238] text-white border-2 border-[#152238]  hover:text-[#152238] hover:bg-white px-10 py-2 rounded-md">
+                    Submit
+                </button>
+            </form>
+
+            <!-- Loading animation -->
+            <div id="loading" class="hidden flex-col items-center gap-3">
+                <div class="w-8 h-8 border-4 border-donker border-t-transparent rounded-full animate-spin"></div>
+                <p>Sending...</p>
+            </div>
+
+            <!-- Thank you message -->
+            <div id="thankyou" class="hidden flex-col items-center gap-3">
+                <h2 class="text-xl font-bold text-green-600">Thank you! 🎉</h2>
+                <p>We’ve received your submission.</p>
+            </div>
+
+            <button onclick="closePopup()"
+                class="bg-white border-2 border-[#152238] hover:bg-[#152238] text-donker hover:text-white px-6 py-1 rounded-md">
+                Close
+            </button>
+        </div>
+    </div>
     <div
-        class="fixed md:bottom-10 bottom-5 right-5 md:right-10 w-fit h-fit z-50 bg-donker md:p-2 p-1 rounded-xl border-2 border-white shadow-md hover:bg-[#2E361C]/50 cursor-pointer">
+        class="fixed md:bottom-10 bottom-5 right-5 md:right-10 w-fit h-fit z-40 bg-donker md:p-2 p-1 rounded-xl border-2 border-white shadow-md hover:bg-green-600 cursor-pointer">
         <img src="icons/whatsapp.png" alt="" class="md:w-7 md:h-7 w-6 h-6 filter brightness-0 invert">
     </div>
-    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent transition-colors duration-500">
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-40 bg-transparent transition-colors duration-500">
         <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
@@ -29,9 +64,8 @@
                 <!-- Menu Desktop -->
                 <div id="menuNav" class="hidden text-white md:flex space-x-6">
                     <a href="#home" class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
-                    <a href="#about" class="tracking-widest transition-colors duration-500 hover:text-white">About</a>
                     <a href="#services"
-                        class="tracking-widest transition-colors duration-500 hover:text-white">Services</a>
+                        class="tracking-widest transition-colors duration-500 hover:text-white">Gallery</a>
                     <a href="#contact"
                         class="tracking-widest transition-colors duration-500 hover:text-white">Contact</a>
                 </div>
@@ -46,9 +80,8 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-[#152238]/80 px-4">
+        <div id="mobile-menu" class="hidden md:hidden px-4">
             <a href="#home" class="block text-gold py-5">Home</a>
-            <a href="#about" class="block text-gold py-5">About</a>
             <a href="#services" class="block text-gold py-5">Services</a>
             <a href="#contact" class="block text-gold py-5">Contact</a>
         </div>
@@ -96,12 +129,14 @@
                     </div>
                 </div>
                 <!-- tombol navigasi -->
-                <div class="swiper-button-next select-none"></div>
-                <div class="swiper-button-prev select-none  "></div>
+                <div class="swiper-button-next select-none hidden md:block"></div>
+                <div class="swiper-button-prev select-none hidden md:block"></div>
                 <!-- pagination -->
                 <div class="swiper-pagination !text-white"></div>
             </div>
-            <p class="text-center italic pt-10 px-10 break-words text-donker box opacity-0 -translate-x-12 transition-all duration-1000">“Architecture is the thoughtful making of space.” —
+            <p
+                class="text-center italic pt-10 px-10 break-words text-donker box opacity-0 -translate-x-12 transition-all duration-1000">
+                “Architecture is the thoughtful making of space.” —
                 Louis Kahn</p>
         </section>
 
@@ -109,10 +144,13 @@
         <!-- Project section -->
         <section>
             <div class="w-full h-auto flex flex-col justify-center items-center px-0 gap-20">
-                <h1 class="text-donker text-light tracking-[10px] md:tracking-[30px] text-2xl md:text-3xl box opacity-0 -translate-x-12 transition-all duration-1000">Project
+                <h1
+                    class="text-donker text-light tracking-[10px] md:tracking-[30px] text-2xl md:text-3xl box opacity-0 -translate-x-12 transition-all duration-1000">
+                    Project
                     Gallery</h1>
                 <div class="w-full h-auto flex flex-col md:flex-row">
-                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[2200ms]">
+                    <div
+                        class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[2200ms]">
                         <div class="bg-[url('img/pict1.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <div
@@ -120,7 +158,8 @@
                             <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
                         </div>
                     </div>
-                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1800ms]">
+                    <div
+                        class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1800ms]">
                         <div class="bg-[url('img/pict2.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <div
@@ -128,7 +167,8 @@
                             <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
                         </div>
                     </div>
-                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1400ms]">
+                    <div
+                        class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1400ms]">
                         <div class="bg-[url('img/pict3.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <div
@@ -136,7 +176,8 @@
                             <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
                         </div>
                     </div>
-                    <div class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1000ms]">
+                    <div
+                        class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1000ms]">
                         <div
                             class="bg-[url('img/pict4.jpg')] h-full w-full bg-cover bg-center transition duration-500 md:group-hover:brightness-50">
                         </div>
@@ -205,7 +246,7 @@
 
 
 
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
 
 
