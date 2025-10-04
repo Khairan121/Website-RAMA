@@ -53,23 +53,45 @@
      background-color: #FFFEFC;
  }
 
- /* White */
+.bg-donker{
+    background-color: #152238;
+}
 
+.text-donker{
+    color: #152238;
+}
+
+.bg-gold{
+    background-color: #fadbb9;
+}
+
+.text-gold{
+    color: #fadbb9;
+}
+
+.bg-tulang{
+    background-color: #f7e7ce;
+}
+
+.text-tulang{
+    color: #f7e7ce;
+}
 
 .swiper-button-next{
   --swiper-navigation-size: 24px;
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: #2E361C;
+  --swiper-navigation-color: #152238;
 }
 
 .swiper-button-prev{
   --swiper-navigation-size: 24px;
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: #2E361C;
+  --swiper-navigation-color: #152238;
 }
 
 .swiper-pagination{
-     --swiper-pagination-color: #C2CCA6;
+     --swiper-pagination-color: #fadbb9;
 }
+
