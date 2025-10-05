@@ -30,12 +30,12 @@ const menuNav = document.getElementById('menuNav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('bg-[#152238]/70', 'backdrop-blur-md');
-        logo.classList.add('text-[#fadbb9]');
-        menuNav.classList.add('text-[#fadbb9]');
+        logo.classList.add('text-[#c9a883]');
+        menuNav.classList.add('text-[#c9a883]');
     } else {
         navbar.classList.remove('bg-[#152238]/70', 'backdrop-blur-md');
-        logo.classList.remove('text-[#fadbb9]');
-        menuNav.classList.remove('text-[#fadbb9]');
+        logo.classList.remove('text-[#c9a883]');
+        menuNav.classList.remove('text-[#c9a883]');
     }
 });
 
