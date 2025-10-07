@@ -13,7 +13,7 @@
     <title>Home</title>
 </head>
 
-<body class="font-montserrat bg-white">
+<body class="font-montserrat bg-white custom-scroll">
     <div id="popup" class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center hidden">
         <div
             class="bg-white p-10 border-2 border-[#152238] rounded-lg shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
@@ -64,7 +64,7 @@
                 <!-- Menu Desktop -->
                 <div id="menuNav" class="hidden text-white md:flex space-x-6">
                     <a href="#home" class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
-                    <a href="#services"
+                    <a href="gallery.html"
                         class="tracking-widest transition-colors duration-500 hover:text-white">Gallery</a>
                     <a href="#contact"
                         class="tracking-widest transition-colors duration-500 hover:text-white">Contact</a>
@@ -82,14 +82,14 @@
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden md:hidden px-4">
             <a href="#home" class="block text-gold py-5">Home</a>
-            <a href="#services" class="block text-gold py-5">Services</a>
+            <a href="gallery.html" class="block text-gold py-5">Gallery</a>
             <a href="#contact" class="block text-gold py-5">Contact</a>
         </div>
     </nav>
 
 
     <!-- main section -->
-    <section class="flex flex-col gap-20">
+    <section class="flex flex-col gap-20 bg-white md:mb-[290px] mb-[580px]">
         <!-- hero section -->
         <section>
             <div class="swiper">
@@ -181,10 +181,10 @@
                         <div
                             class="bg-[url('img/pict4.jpg')] h-full w-full bg-cover bg-center transition duration-500 md:group-hover:brightness-50">
                         </div>
-                        <div
+                        <a href="gallery.html"
                             class="absolute inset-0 flex items-center justify-center bg-[#152238]/50 opacity-100 md:opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
                             <p class="text-gold text-xl font-bold tracking-[10px] text-center">More</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
 
 
         <!-- contact section -->
-        <section class="box opacity-0 -translate-x-12 transition-all duration-[1400ms] py-10">
+        <section class="box opacity-0 -translate-x-12 transition-all duration-[1400ms] pb-[90px]">
             <div class="w-full h-70 px-0 flex flex-col justify-between items-center gap-20">
                 <h1 class="text-donker text-light tracking-[10px] md:tracking-[30px] text-2xl md:text-3xl">Contact Us
                 </h1>
@@ -215,34 +215,34 @@
         </section>
 
         <!-- footer -->
-        <footer>
-            <div class="w-full h-fit bg-donker p-10 pb-0 flex flex-col">
-                <h1 class="pb-10 text-gold font-bold text-3xl leading-[20px]">RAMA <br> <span
-                        class="text-sm font-light text-gold tracking-widest">Design the Future</span></h1>
-                <div class="h-auto flex flex-col md:flex-row justify-around items-center md:items-start gap-5">
-                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
-                        <h1 class="font-semibold tracking-widest text-gold">Resources</h1>
-                        <a href="" class="underline text-gold">Home</a>
-                        <a href="" class="underline text-gold">Gallery</a>
-                        <a href="" class="underline text-gold">Contact</a>
-                    </div>
-                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
-                        <h1 class="font-semibold tracking-widest text-gold">Contact</h1>
-                        <a href="" class="underline text-gold">+62 819 9238 3128</a>
-                        <a href="" class="underline text-gold">rama@gmail.com</a>
-                        <a href="" class="underline text-gold">rama.studio</a>
-                    </div>
-                    <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
-                        <h1 class="font-semibold tracking-widest text-gold">Social</h1>
-                        <a href="" class="underline text-gold">Instagram</a>
-                        <a href="" class="underline text-gold">Tiktok</a>
-                    </div>
+        
+    </section>
+    <footer class="fixed bottom-0 left-0 w-full z-[-10]">
+        <div class="w-full h-fit bg-donker p-10 pb-0 flex flex-col">
+            <h1 class="pb-10 text-gold font-bold text-3xl leading-[20px]">RAMA <br> <span
+                    class="text-sm font-light text-gold tracking-widest">Design the Future</span></h1>
+            <div class="h-auto flex flex-col md:flex-row justify-around items-center md:items-start gap-5">
+                <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                    <h1 class="font-semibold tracking-widest text-gold">Resources</h1>
+                    <a href="" class="underline text-gold">Home</a>
+                    <a href="" class="underline text-gold">Gallery</a>
+                    <a href="" class="underline text-gold">Contact</a>
+                </div>
+                <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                    <h1 class="font-semibold tracking-widest text-gold">Contact</h1>
+                    <a href="" class="underline text-gold">+62 819 9238 3128</a>
+                    <a href="" class="underline text-gold">rama@gmail.com</a>
+                    <a href="" class="underline text-gold">rama.studio</a>
+                </div>
+                <div class="md:w-1/3 w-full h-auto flex flex-col items-center md:items-start gap-4">
+                    <h1 class="font-semibold tracking-widest text-gold">Social</h1>
+                    <a href="" class="underline text-gold">Instagram</a>
+                    <a href="" class="underline text-gold">Tiktok</a>
                 </div>
             </div>
-            <p class="text-right text-[10px] font-light bg-donker text-gold">©2025 Khairan Ghithrif</p>
-        </footer>
-
-    </section>
+        </div>
+        <p class="text-right text-[10px] font-light bg-donker text-gold">©2025 Khairan Ghithrif</p>
+    </footer>
 
 
 
