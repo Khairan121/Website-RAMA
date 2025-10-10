@@ -49,7 +49,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add("opacity-0", "-translate-x-12");
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.3 });
 
 document.querySelectorAll(".box").forEach((el) => observer.observe(el));
 
