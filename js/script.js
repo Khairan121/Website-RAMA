@@ -99,9 +99,9 @@ form.addEventListener("submit", function (e) {
         });
 });
 
-if ("serviceWorker" in navigator) {
-            navigator.serviceWorker
-                .register("/Website-RAMA/sw.js")
-                .then(() => console.log("Service Worker aktif!"))
-                .catch((err) => console.log("Gagal register SW:", err));
-        }
+// if ("serviceWorker" in navigator) {
+//             navigator.serviceWorker
+//                 .register("/Website-RAMA/sw.js")
+//                 .then(() => console.log("Service Worker aktif!"))
+//                 .catch((err) => console.log("Gagal register SW:", err));
+//         }
