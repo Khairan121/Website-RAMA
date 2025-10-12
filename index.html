@@ -249,15 +249,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker
-                .register("/sw.js")
-                .then(() => console.log("Service Worker aktif!"))
-                .catch((err) => console.log("Gagal register SW:", err));
-        }
-    </script>
 </body>
 
 </html>

@@ -98,3 +98,10 @@ form.addEventListener("submit", function (e) {
             alert("Error: " + JSON.stringify(err));
         });
 });
+
+if ("serviceWorker" in navigator) {
+            navigator.serviceWorker
+                .register("/sw.js")
+                .then(() => console.log("Service Worker aktif!"))
+                .catch((err) => console.log("Gagal register SW:", err));
+        }
