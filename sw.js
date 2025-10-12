@@ -1,18 +1,16 @@
 const CACHE_NAME = "agit-web-cache-v2"; // bisa lo ubah versinya kalau update
 const ASSETS = [
-    "/", // halaman utama
-    "index.html",
-    "gallery.html",
-    "css/style.css",
-    "js/script.js",
-    
-    "img/pict1.jpg",
-    "img/pict2.jpg",
-    "img/pict3.jpg",
-    "img/pict4.jpg",
-
-    "pdp/villa-1/villa-1.html",
-    "pdp/villa-2/villa-2.html"
+    "/Website-RAMA/",
+    "/Website-RAMA/index.html",
+    "/Website-RAMA/gallery.html",
+    "/Website-RAMA/css/style.css",
+    "/Website-RAMA/js/script.js",
+    "/Website-RAMA/img/pict1.jpg",
+    "/Website-RAMA/img/pict2.jpg",
+    "/Website-RAMA/img/pict3.jpg",
+    "/Website-RAMA/img/pict4.jpg",
+    "/Website-RAMA/pdp/villa-1/villa-1.html",
+    "/Website-RAMA/pdp/villa-2/villa-2.html"
 ];
 
 // pas pertama kali service worker di-install
