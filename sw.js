@@ -1,4 +1,4 @@
-const CACHE_NAME = "agit-web-cache-v1"; // bisa lo ubah versinya kalau update
+const CACHE_NAME = "agit-web-cache-v2"; // bisa lo ubah versinya kalau update
 const ASSETS = [
     "/", // halaman utama
     "index.html",
