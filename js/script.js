@@ -38,12 +38,12 @@ window.addEventListener('scroll', () => {
         navbar.classList.add('bg-[#152238]/70', 'backdrop-blur-md');
         logo.classList.add('text-[#c9a883]');
         menuNav.classList.add('text-[#c9a883]');
-        logoBira.src = 'img/logo-bira-sec.png';
+        // logoBira.src = 'img/logo-bira-sec.png';
     } else {
         navbar.classList.remove('bg-[#152238]/70', 'backdrop-blur-md');
         logo.classList.remove('text-[#c9a883]');
         menuNav.classList.remove('text-[#c9a883]');
-        logoBira.src = 'img/logo-bira-white.png';
+        // logoBira.src = 'img/logo-bira-white.png';
     }
 });
 
