@@ -113,3 +113,20 @@ form.addEventListener("submit", function (e) {
 //                 .then(() => console.log("Service Worker aktif!"))
 //                 .catch((err) => console.log("Gagal register SW:", err));
 //         }
+
+
+// function testLoader() {
+//   const loading = document.getElementById('loading');
+//   const thankyou = document.getElementById('thankyou');
+//   const form = document.getElementById('myForm');
+
+//   // tampilkan loader
+//   form.classList.add('hidden');
+//   loading.classList.remove('hidden');
+
+//   // simulasi loading 2 detik
+//   setTimeout(() => {
+//     loading.classList.add('hidden');
+//     thankyou.classList.remove('hidden');
+//   }, 2000);
+// }

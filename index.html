@@ -15,8 +15,7 @@
 
 <body class="font-montserrat bg-white custom-scroll">
     <div id="popup" class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center hidden">
-        <div
-            class="bg-white p-10 shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
+        <div class="bg-white p-10 shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
 
             <h1 id="popup-title" class="text-lg tracking-widest">Tell us more about you</h1>
 
@@ -30,17 +29,22 @@
                     class="bg-[#152238] text-white border-2 border-[#152238]  hover:text-[#152238] hover:bg-white px-10 py-2 rounded-md transition-colors duration-300">
                     Submit
                 </button>
+
+                <!-- <button onclick="testLoader()"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+                    Test Loader
+                </button> -->
             </form>
 
             <!-- Loading animation -->
-            <div id="loading" class="hidden flex-col items-center gap-3">
-                <div class="w-8 h-8 border-4 border-donker border-t-transparent rounded-full animate-spin"></div>
+            <div id="loading" class="hidden w-fit flex flex-col items-center justify-center gap-5">
+                <div class="w-8 h-8 border-4 border-[#152238] border-t-transparent rounded-full animate-spin"></div>
                 <p>Sending...</p>
             </div>
 
             <!-- Thank you message -->
             <div id="thankyou" class="hidden flex-col items-center gap-3">
-                <h2 class="text-xl font-bold text-green-600">Thank you! 🎉</h2>
+                <h2 class="text-xl font-bold text-green-600">Thank you!</h2>
                 <p>We’ve received your submission.</p>
             </div>
 
@@ -71,7 +75,8 @@
 
                 <!-- Menu Desktop -->
                 <div id="menuNav" class="hidden text-white md:flex space-x-6">
-                    <a href="#home" class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
+                    <a href="index.html"
+                        class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
                     <a href="gallery.html"
                         class="tracking-widest transition-colors duration-500 hover:text-white">Gallery</a>
                     <a href="contact.html"
@@ -90,7 +95,7 @@
         <!-- Menu Mobile -->
         <div id="mobile-menu"
             class="md:hidden px-4 max-h-0 overflow-hidden opacity-0 transform scale-y-0 origin-top transition-all duration-500 ease-in-out">
-            <a href="#home" class="block text-gold py-3">Home</a>
+            <a href="index.html" class="block text-gold py-3">Home</a>
             <a href="gallery.html" class="block text-gold py-3">Gallery</a>
             <a href="contact.html" class="block text-gold py-3">Contact</a>
         </div>
@@ -107,9 +112,9 @@
                         class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict5.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
-                            Nama Villa 1 Disini
+                            Transpark Bintaro
                         </h1>
-                        <a href="pdp/villa-1/villa-1.html"
+                        <a href="pdp/villa-1/villa-transpark.html"
                             class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
                             View More
                         </a>
@@ -118,9 +123,9 @@
                         class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict6.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
-                            Nama Villa 2 Disini
+                            Meikarta District
                         </h1>
-                        <a href="pdp/villa-2/villa-2.html"
+                        <a href="pdp/villa-2/villa-meikarta.html"
                             class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
                             View More
                         </a>
@@ -129,9 +134,9 @@
                         class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict7.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
-                            Nama Villa 3 Disini
+                            Evenciio Apartment
                         </h1>
-                        <a href="#"
+                        <a href="pdp/villa-3/villa-evenciio.html"
                             class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
                             View More
                         </a>
@@ -140,9 +145,9 @@
                         class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict8.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
-                            Nama Villa 4 Disini
+                            Vishala Sidemen Retreat
                         </h1>
-                        <a href="#"
+                        <a href="pdp/villa-4/villa-vishala.html"
                             class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
                             View More
                         </a>
@@ -151,9 +156,20 @@
                         class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict2.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
-                            Nama Villa 5 Disini
+                            Uluwatu Villa Cliff
                         </h1>
-                        <a href="#"
+                        <a href="pdp/villa-5/villa-uluwatu.html"
+                            class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
+                            View More
+                        </a>
+                    </div>
+                    <div
+                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict3.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
+                        <h1
+                            class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
+                            Milk and Madu Restaurant
+                        </h1>
+                        <a href="pdp/villa-6/villa-milkmadu.html"
                             class="text-md md:text-md font-light tracking-widest text-primary underline select-none">
                             View More
                         </a>
@@ -184,28 +200,28 @@
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[2200ms]">
                         <div class="bg-[url('img/pict5.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
-                        <a href="pdp/villa-1/villa-1.html"
+                        <a href="pdp/villa-1/villa-transpark.html"
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer ">
-                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
+                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Transpark Bintaro</p>
                         </a>
                     </div>
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1800ms]">
                         <div class="bg-[url('img/pict6.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
-                        <a href="pdp/villa-2/villa-2.html"
+                        <a href="pdp/villa-2/villa-meikarta.html"
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
-                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
+                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Meikarta District</p>
                         </a>
                     </div>
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1400ms]">
                         <div class="bg-[url('img/pict7.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
-                        <div
+                        <a href="pdp/villa-3/villa-evenciio.html"
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
-                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Info tentang gambar</p>
-                        </div>
+                            <p class="text-gold text-xl font-bold tracking-[8px] text-center">Evenciio Apartment</p>
+                        </a>
                     </div>
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1000ms]">

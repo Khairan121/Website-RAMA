@@ -35,7 +35,8 @@
 
                 <!-- Menu Desktop -->
                 <div id="menuNav" class="hidden text-white md:flex space-x-6">
-                    <a href="index.html" class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
+                    <a href="index.html"
+                        class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
                     <a href="gallery.html"
                         class="tracking-widest transition-colors duration-500 hover:text-white">Gallery</a>
                     <a href="contact.html"
@@ -63,15 +64,25 @@
     <!-- Contact Section -->
     <section
         class="w-full h-auto mt-[64px] bg-donker md:mb-[200px] mb-[580px] flex md:flex-row md:justify-between md:items-start md:py-[70px] md:px-[100px] flex-col justify-center items-center ">
-        <div class="md:w-1/2 w-full  h-auto flex flex-col gap-5 px-5 py-5 box opacity-0 -translate-x-12 transition-all duration-1000">
+        <div
+            class="md:w-1/2 w-full  h-auto flex flex-col gap-5 px-5 py-5 box opacity-0 -translate-x-12 transition-all duration-1000">
             <h1 class="text-gold hidden md:block md:text-6xl font-bold text-left">Got a project in mind?</h1>
             <h1 class="text-gold hidden md:block md:text-4xl text-left">Let's make it happen! </h1>
-            <h1 class="text-gold md:hidden text-4xl font-bold text-center">have a question?</h1>
+            <h1 class="text-gold md:hidden text-3xl font-bold text-center">Got a project in mind?</h1>
         </div>
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSd3YssI4EDNiskAFnkfUpB-SzsijK79iZxF7fdr318y-ItOTA/viewform?embedded=true"
-            frameborder="0" marginheight="0" marginwidth="0"
-            class="bg-donker md:w-1/2 md:h-[1100px] w-full h-[1890px]">Loading…</iframe>
+        <div class="relative bg-donker md:w-1/2 md:h-[1100px] w-full h-[1890px]">
+            <!-- Loader -->
+            <div id="loader" class="absolute inset-0 flex items-center justify-center bg-donker z-10">
+                <div class="w-12 h-12 border-4 border-[#c9a883] border-t-transparent rounded-full animate-spin"></div>
+            </div>
+
+            <!-- Iframe -->
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSd3YssI4EDNiskAFnkfUpB-SzsijK79iZxF7fdr318y-ItOTA/viewform?embedded=true"
+                frameborder="0" marginheight="0" marginwidth="0" class="w-full h-full"
+                onload="document.getElementById('loader').style.display='none'">
+            </iframe>
+        </div>
     </section>
 
     <footer class="fixed bottom-0 left-0 w-full z-[-10]">
