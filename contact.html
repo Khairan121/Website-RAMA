@@ -22,18 +22,24 @@
         <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 ">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
-                <a href="#" id="logo"
-                    class="flex-shrink-0 text-gold drop-shadow-md font-bold text-3xl transition-colors duration-500 hover:text-white cursor-pointer">
-                    RAMA</a>
+                <a href="index.html" id="logo"
+                    class="flex-shrink-0 text-white drop-shadow-md flex flex-row justify-center items-center text-2xl gap-2 transition-colors duration-500 hover:text-white cursor-pointer">
+                    <img id="logoBira" src="/img/logo-bira-white.png" alt="logo_bira"
+                        class="w-[45px] h-auto transition-colors duration-500">
+                    <h1
+                        class="text-2xl gap-0 leading-none flex flex-col justify-start items-start font-semibold tracking-widest">
+                        BIRA <span class="text-sm font-normal tracking-widest">
+                            <h1>Project Management</h1>
+                        </span></h1>
+                </a>
 
                 <!-- Menu Desktop -->
-                <div id="menuNav" class="hidden text-gold md:flex space-x-6">
-                    <a href="index.html"
-                        class="tracking-widest transition-colors duration-500 hover:text-[#c9a883]">Home</a>
+                <div id="menuNav" class="hidden text-white md:flex space-x-6">
+                    <a href="index.html" class="tracking-widest transition-colors duration-500 hover:text-white">Home</a>
                     <a href="gallery.html"
-                        class="tracking-widest transition-colors duration-500 hover:text-[#c9a883]">Gallery</a>
-                    <a href="#"
-                        class="tracking-widest transition-colors duration-500 hover:text-[#c9a883]">Contact</a>
+                        class="tracking-widest transition-colors duration-500 hover:text-white">Gallery</a>
+                    <a href="contact.html"
+                        class="tracking-widest transition-colors duration-500 hover:text-white">Contact</a>
                 </div>
 
                 <!-- Button Mobile -->
@@ -46,10 +52,11 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden px-4">
-            <a href="index.html" class="block text-gold py-5">Home</a>
-            <a href="gallery.html" class="block text-gold py-5">Gallery</a>
-            <a href="#" class="block text-gold py-5">Contact</a>
+        <div id="mobile-menu"
+            class="md:hidden px-4 max-h-0 overflow-hidden opacity-0 transform scale-y-0 origin-top transition-all duration-500 ease-in-out">
+            <a href="index.html" class="block text-gold py-3">Home</a>
+            <a href="gallery.html" class="block text-gold py-3">Gallery</a>
+            <a href="contact.html" class="block text-gold py-3">Contact</a>
         </div>
     </nav>
 
@@ -57,24 +64,25 @@
     <section
         class="w-full h-auto mt-[64px] bg-donker md:mb-[200px] mb-[580px] flex md:flex-row md:justify-between md:items-start md:py-[70px] md:px-[100px] flex-col justify-center items-center ">
         <div class="md:w-1/2 w-full  h-auto flex flex-col gap-5 px-5 py-5 box opacity-0 -translate-x-12 transition-all duration-1000">
-            <h1 class="text-gold hidden md:block md:text-6xl font-bold text-left">have a <br> question?</h1>
+            <h1 class="text-gold hidden md:block md:text-6xl font-bold text-left">Got a project in mind?</h1>
+            <h1 class="text-gold hidden md:block md:text-4xl text-left">Let's make it happen! </h1>
             <h1 class="text-gold md:hidden text-4xl font-bold text-center">have a question?</h1>
-            <p class="text-white text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione est illo quidem,
-                nemo sapiente.
-                Temporibus saepe reprehenderit nemo exercitationem quaerat libero iusto minus consequuntur! Eligendi
-                doloribus quia explicabo quasi.</p>
         </div>
         <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfi14NDNz--EpEeo13VE5EJpMmnG-gcnSdyQw8ibAVdHY5xcg/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSd3YssI4EDNiskAFnkfUpB-SzsijK79iZxF7fdr318y-ItOTA/viewform?embedded=true"
             frameborder="0" marginheight="0" marginwidth="0"
-            class="bg-donker md:w-1/2 md:h-[1100px] w-full h-[1190px]">Loading…</iframe>
+            class="bg-donker md:w-1/2 md:h-[1100px] w-full h-[1890px]">Loading…</iframe>
     </section>
 
     <footer class="fixed bottom-0 left-0 w-full z-[-10]">
         <div
-            class="w-full h-fit bg-donker p-10 pb-0 flex flex-col md:flex-row md:justify-between md:items-baseline gap-3 md:gap-0">
-            <h1 class="pb-7 md:pb-0 text-gold font-bold text-3xl leading-[20px] md:self-center">RAMA <br> <span
-                    class="text-sm font-light text-gold tracking-widest">Design the Future</span></h1>
+            class="w-full h-fit bg-donker p-10 pb-0 flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+            <div class="flex justify-center items-center gap-3 md:w-1/6">
+                <img id="logoBira" src="/img/logo-bira-sec.png" alt="logo_bira"
+                    class="w-[65px] h-auto transition-colors duration-500">
+                <h1 class="text-gold font-bold text-3xl leading-[20px] md:self-center">BIRA <br> <span
+                        class="text-sm font-light text-gold tracking-widest">Project Management</span></h1>
+            </div>
             <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5">
                 <h1 class="font-semibold tracking-widest text-gold">Resources</h1>
                 <a href="index.html" class="underline text-gold">Home</a>
@@ -87,12 +95,12 @@
                 <a href="" class="underline text-gold">rama@gmail.com</a>
                 <a href="" class="underline text-gold">rama.studio</a>
             </div>
-            <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5">
+            <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5 md:self-baseline">
                 <h1 class="font-semibold tracking-widest text-gold">Social</h1>
-                <a href="https://www.instagram.com/bungbew_?igsh=YWxpZmV4cjZnMWU1" target="_blank" class="underline text-gold">Instagram</a>
+                <a href="https://www.instagram.com/bungbew_?igsh=YWxpZmV4cjZnMWU1" target="_blank"
+                    class="underline text-gold">Instagram</a>
                 <a href="" class="underline text-gold">Tiktok</a>
             </div>
-
         </div>
         <p class="text-right text-[10px] font-light bg-donker text-gold">©2025 Khairan Ghithrif</p>
     </footer>

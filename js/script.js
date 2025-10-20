@@ -4,7 +4,12 @@ const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 
 btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+  menu.classList.toggle('max-h-0');
+  menu.classList.toggle('opacity-0');
+  menu.classList.toggle('scale-y-0');
+  menu.classList.toggle('max-h-[300px]'); // bebas, sesuaikan tinggi konten
+  menu.classList.toggle('opacity-100');
+  menu.classList.toggle('scale-y-100');
 });
 
 const swiper = new Swiper('.swiper', {
@@ -26,16 +31,19 @@ const swiper = new Swiper('.swiper', {
 const navbar = document.getElementById('navbar');
 const logo = document.getElementById('logo');
 const menuNav = document.getElementById('menuNav');
+const logoBira = document.getElementById('logoBira');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('bg-[#152238]/70', 'backdrop-blur-md');
         logo.classList.add('text-[#c9a883]');
         menuNav.classList.add('text-[#c9a883]');
+        logoBira.src = '/img/logo-bira-sec.png';
     } else {
         navbar.classList.remove('bg-[#152238]/70', 'backdrop-blur-md');
         logo.classList.remove('text-[#c9a883]');
         menuNav.classList.remove('text-[#c9a883]');
+        logoBira.src = '/img/logo-bira-white.png';
     }
 });
 

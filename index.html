@@ -16,9 +16,9 @@
 <body class="font-montserrat bg-white custom-scroll">
     <div id="popup" class="fixed inset-0 z-50 bg-black/50 flex items-center justify-center hidden">
         <div
-            class="bg-white p-10 border-2 border-[#152238] rounded-lg shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
+            class="bg-white p-10 shadow-xl w-fit h-auto text-center flex flex-col justify-center items-center gap-8">
 
-            <h1 id="popup-title">Tell us more about you</h1>
+            <h1 id="popup-title" class="text-lg tracking-widest">Tell us more about you</h1>
 
             <!-- Form -->
             <form id="myForm" class="flex flex-col justify-center items-center gap-5">
@@ -59,8 +59,15 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
                 <a href="#" id="logo"
-                    class="flex-shrink-0 text-white drop-shadow-md font-bold text-3xl transition-colors duration-500 hover:text-white cursor-pointer">
-                    RAMA</a>
+                    class="flex-shrink-0 text-white drop-shadow-md flex flex-row justify-center items-center text-2xl gap-2 transition-colors duration-500 hover:text-white cursor-pointer">
+                    <img id="logoBira" src="/img/logo-bira-white.png" alt="logo_bira"
+                        class="w-[45px] h-auto transition-colors duration-500">
+                    <h1
+                        class="text-2xl gap-0 leading-none flex flex-col justify-start items-start font-semibold tracking-widest">
+                        BIRA <span class="text-sm font-normal tracking-widest">
+                            <h1>Project Management</h1>
+                        </span></h1>
+                </a>
 
                 <!-- Menu Desktop -->
                 <div id="menuNav" class="hidden text-white md:flex space-x-6">
@@ -81,10 +88,11 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden px-4">
-            <a href="#home" class="block text-gold py-5">Home</a>
-            <a href="gallery.html" class="block text-gold py-5">Gallery</a>
-            <a href="contact.html" class="block text-gold py-5">Contact</a>
+        <div id="mobile-menu"
+            class="md:hidden px-4 max-h-0 overflow-hidden opacity-0 transform scale-y-0 origin-top transition-all duration-500 ease-in-out">
+            <a href="#home" class="block text-gold py-3">Home</a>
+            <a href="gallery.html" class="block text-gold py-3">Gallery</a>
+            <a href="contact.html" class="block text-gold py-3">Contact</a>
         </div>
     </nav>
 
@@ -96,7 +104,7 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict1.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
+                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict5.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
                             Nama Villa 1 Disini
@@ -107,7 +115,7 @@
                         </a>
                     </div>
                     <div
-                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict2.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
+                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict6.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
                             Nama Villa 2 Disini
@@ -118,7 +126,7 @@
                         </a>
                     </div>
                     <div
-                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict3.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
+                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict7.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
                             Nama Villa 3 Disini
@@ -129,7 +137,7 @@
                         </a>
                     </div>
                     <div
-                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict4.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
+                        class="swiper-slide h-[670px] md:h-[690px] w-full bg-[url('img/pict8.jpg')] bg-cover bg-center flex flex-col justify-end items-start p-5">
                         <h1
                             class="text-2xl md:text-2xl md:leading-[35px] font-bold tracking-widest md:tracking-[10px] text-primary drop-shadow-lg select-none">
                             Nama Villa 4 Disini
@@ -174,7 +182,7 @@
                 <div class="w-full h-auto flex flex-col md:flex-row">
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[2200ms]">
-                        <div class="bg-[url('img/pict1.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        <div class="bg-[url('img/pict5.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <a href="pdp/villa-1/villa-1.html"
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer ">
@@ -183,7 +191,7 @@
                     </div>
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1800ms]">
-                        <div class="bg-[url('img/pict2.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        <div class="bg-[url('img/pict6.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <a href="pdp/villa-2/villa-2.html"
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
@@ -192,7 +200,7 @@
                     </div>
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1400ms]">
-                        <div class="bg-[url('img/pict3.jpg')] h-full w-full bg-cover bg-center transition duration-500">
+                        <div class="bg-[url('img/pict7.jpg')] h-full w-full bg-cover bg-center transition duration-500">
                         </div>
                         <div
                             class="absolute inset-0 flex items-center bg-[#152238]/80 justify-center opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
@@ -202,7 +210,7 @@
                     <div
                         class="relative group h-96 md:h-[600px] w-full md:w-1/4 overflow-hidden box opacity-0 -translate-x-12 transition-all duration-1000 md:duration-[1000ms]">
                         <div
-                            class="bg-[url('img/pict4.jpg')] h-full w-full bg-cover bg-center transition duration-500 md:group-hover:brightness-50">
+                            class="bg-[url('img/pict8.jpg')] h-full w-full bg-cover bg-center transition duration-500 md:group-hover:brightness-50">
                         </div>
                         <a href="gallery.html"
                             class="absolute inset-0 flex items-center justify-center bg-[#152238]/50 opacity-100 md:opacity-0 group-hover:opacity-100 transition duration-500 cursor-pointer">
@@ -237,14 +245,20 @@
             </div>
         </section>
 
+
+
         <!-- footer -->
 
     </section>
     <footer class="fixed bottom-0 left-0 w-full z-[-10]">
         <div
-            class="w-full h-fit bg-donker p-10 pb-0 flex flex-col md:flex-row md:justify-between md:items-baseline gap-3 md:gap-0">
-            <h1 class="pb-7 md:pb-0 text-gold font-bold text-3xl leading-[20px] md:self-center">RAMA <br> <span
-                    class="text-sm font-light text-gold tracking-widest">Design the Future</span></h1>
+            class="w-full h-fit bg-donker p-10 pb-0 flex flex-col md:flex-row md:justify-between md:items-center gap-3 md:gap-0">
+            <div class="flex justify-center items-center gap-3 md:w-1/6">
+                <img id="logoBira" src="/img/logo-bira-sec.png" alt="logo_bira"
+                    class="w-[65px] h-auto transition-colors duration-500">
+                <h1 class="text-gold font-bold text-3xl leading-[20px] md:self-center">BIRA <br> <span
+                        class="text-sm font-light text-gold tracking-widest">Project Management</span></h1>
+            </div>
             <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5">
                 <h1 class="font-semibold tracking-widest text-gold">Resources</h1>
                 <a href="index.html" class="underline text-gold">Home</a>
@@ -257,12 +271,12 @@
                 <a href="" class="underline text-gold">rama@gmail.com</a>
                 <a href="" class="underline text-gold">rama.studio</a>
             </div>
-            <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5">
+            <div class="md:w-1/4 w-full h-auto flex flex-col items-center md:items-start gap-1 pb-5 md:self-baseline">
                 <h1 class="font-semibold tracking-widest text-gold">Social</h1>
-                <a href="https://www.instagram.com/bungbew_?igsh=YWxpZmV4cjZnMWU1" target="_blank" class="underline text-gold">Instagram</a>
+                <a href="https://www.instagram.com/bungbew_?igsh=YWxpZmV4cjZnMWU1" target="_blank"
+                    class="underline text-gold">Instagram</a>
                 <a href="" class="underline text-gold">Tiktok</a>
             </div>
-
         </div>
         <p class="text-right text-[10px] font-light bg-donker text-gold">©2025 Khairan Ghithrif</p>
     </footer>
