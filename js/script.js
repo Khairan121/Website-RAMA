@@ -64,7 +64,7 @@ document.querySelectorAll(".box").forEach((el) => observer.observe(el));
 
 const popup = document.getElementById("popup");
 const popupKey = "popupTimestamp";
-const delay = 6000; // 6 detik testing
+const delay = 1800000; // 6 detik testing
 
 window.addEventListener("load", () => {
     const lastShown = localStorage.getItem(popupKey);
