@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://biraproject.com/</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/about.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/gallery.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/contact.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PDP / Project Pages -->
+  <url>
+    <loc>https://biraproject.com/pdp/villa-1/villa-transpark.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/pdp/villa-4/villa-vishala.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/pdp/villa-5/villa-uluwatu.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://biraproject.com/pdp/villa-6/villa-milkmadu.html</loc>
+    <lastmod>2025-11-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
